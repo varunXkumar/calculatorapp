@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/inputbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="56dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btAC"
+                android:layout_width="match_parent"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="cleanInput"
+                android:text="AC"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btplusminus"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="cleanInput"
+                android:text="+/-"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btpercent"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="cleanInput"
+                android:text="%"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btdivide"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:onClick="getOperator"
+                android:text="/"
+                android:textSize="38sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt7"
+                android:layout_width="match_parent"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="7"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="8"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/bt9"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="9"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btmultiply"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:onClick="getOperator"
+                android:text="x"
+                android:textSize="38sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="match_parent"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="4"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="5"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="6"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btsub"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:onClick="getOperator"
+                android:text="-"
+                android:textSize="38sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="1"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="2"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="getNumbers"
+                android:text="3"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/btadd"
+                android:layout_width="wrap_content"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:onClick="getOperator"
+                android:text="+"
+                android:textSize="38sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt0"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:layout_marginRight="1pt"
+            android:layout_weight="1"
+            android:onClick="getNumbers"
+            android:text="0"
+            android:textSize="38sp" />
+
+        <Button
+            android:id="@+id/btdot"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:layout_marginRight="1pt"
+            android:layout_weight="1"
+            android:onClick="getNumbers"
+            android:text="."
+            android:textSize="38sp" />
+
+        <Button
+            android:id="@+id/btequal"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:layout_marginRight="1pt"
+            android:layout_weight="1"
+            android:onClick="equaloperator"
+            android:text="="
+            android:textSize="38sp" />
+    </LinearLayout>
+
+</LinearLayout>
